@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+
+<TextView
+    android:id="@+id/tv_header"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="SỐ HỌC ĐƠN GIẢN CONSTRAINLAYOUT"
+    android:background="@color/white"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textSize="14sp"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_a"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="A = "
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header"/>
+
+    <EditText
+        android:id="@+id/edt_a"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:hint="Enter number A"
+        app:layout_constraintTop_toTopOf="@+id/tv_a"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_a"
+        app:layout_constraintLeft_toRightOf="@+id/tv_a"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_b"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="B = "
+        android:textSize="14sp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_a"/>
+
+    <EditText
+        android:id="@+id/edt_b"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:background="@color/white"
+        android:layout_margin="10dp"
+        android:paddingLeft="5dp"
+        android:hint="Enter number B"
+        app:layout_constraintTop_toTopOf="@+id/tv_b"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_b"
+        app:layout_constraintLeft_toRightOf="@+id/tv_b"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_b"
+        android:weightSum="10">
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_cong"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="+"
+        android:backgroundTint="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_b"/>
+
+    <Button
+        android:id="@+id/btn_tru"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="+"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/btn_cong"
+        app:layout_constraintLeft_toRightOf="@+id/btn_cong"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_cong"/>
+
+    <Button
+        android:id="@+id/btn_nhan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="*"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/btn_tru"
+        app:layout_constraintLeft_toRightOf="@+id/btn_tru"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_tru"/>
+
+    <Button
+        android:id="@+id/btn_chia"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:text="/"
+        android:backgroundTint="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/btn_nhan"
+        app:layout_constraintLeft_toRightOf="@+id/btn_nhan"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_nhan"/>
+
+    <TextView
+        android:id="@+id/tvkq"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Kết Qủa"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_cong"/>
+
+    <TextView
+        android:id="@+id/tv_ketqua"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvkq"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

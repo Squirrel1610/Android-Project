@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SỐ HỌC ĐƠN GIẢN LINEARLAYOUT"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_a"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="A = "
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/edt_a"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:hint="Enter number A" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_b"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="B = "
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/edt_b"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:inputType="number"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:paddingLeft="5dp"
+            android:hint="Enter number B" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/btn_cong"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="+"
+            android:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_tru"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="-"
+            android:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_nhan"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="*"
+            android:backgroundTint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_chia"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="/"
+            android:backgroundTint="@color/black" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvkq"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Kết Qủa"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_ketqua"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white" />
+</LinearLayout>
