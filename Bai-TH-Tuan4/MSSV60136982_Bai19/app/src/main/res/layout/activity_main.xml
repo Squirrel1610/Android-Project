@@ -7,12 +7,31 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="CustomListViewLayout"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:textSize="26dp"
+        android:textColor="@color/white"
+        android:paddingLeft="20dp"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_pos_val"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_pos_val"
+        />
 
 </android.support.constraint.ConstraintLayout>
