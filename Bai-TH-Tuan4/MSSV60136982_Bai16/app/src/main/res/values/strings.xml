@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MSSV60136982_Bai16</string>
+    <string-array name="list_name">
+        <item>Tèo</item>
+        <item>Tý</item>
+        <item>Bin</item>
+        <item>Bo</item>
+    </string-array>
+</resources>
