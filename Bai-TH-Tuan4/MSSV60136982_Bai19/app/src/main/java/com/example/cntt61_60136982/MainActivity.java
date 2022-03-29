@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tv_show = (TextView) findViewById(R.id.tv_pos_val);
         List<Province>  image_details = getListData();
-        final ListView listView = (ListView) findViewById(R.id.listView);
+        ListView listView = (ListView) findViewById(R.id.listView);
         listView.setAdapter((ListAdapter) new CustomListAdapter(this, image_details));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
 
     List<Province> getListData(){
         List<Province> list = new ArrayList<Province>();
-        Province hanoi = new Province("Ha Noi", "globe");
-        Province hue = new Province("Hue", "star");
-        Province danang = new Province("Da Nang", "globe");
-        Province sapa = new Province("Sapa", "star");
+        Province hanoi = new Province("globe", "Ha Noi");
+        Province hue = new Province("star", "Hue");
+        Province danang = new Province("globe", "Da Nang");
+        Province sapa = new Province("star", "Sapa");
 
         list.add(hanoi);
         list.add(hue);
