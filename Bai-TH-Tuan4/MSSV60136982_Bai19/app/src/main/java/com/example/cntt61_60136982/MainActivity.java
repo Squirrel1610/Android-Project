@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         TextView tv_show = (TextView) findViewById(R.id.tv_pos_val);
         List<Province>  image_details = getListData();
         ListView listView = (ListView) findViewById(R.id.listView);
-        listView.setAdapter((ListAdapter) new CustomListAdapter(this, image_details));
+        listView.setAdapter(new CustomListAdapter(this, image_details));
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
