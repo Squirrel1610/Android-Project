@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_welcome"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/tiki_logo"/>
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -58,21 +58,21 @@
         app:layout_constraintTop_toBottomOf="@+id/img_logo">
 
         <Button
-            android:id="@+id/btn_quiz1"
+            android:id="@+id/btn_logout"
             android:layout_width="0dp"
 
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Quiz 1"
+            android:text="Đăng xuất"
             android:textSize="20dp"
             android:backgroundTint="#04CEE8"
             />
         <Button
-            android:id="@+id/btn_quiz2"
+            android:id="@+id/btn_quitapp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Quiz 2"
+            android:text="Thoát"
             android:textSize="20dp"
             android:backgroundTint="#04CEE8"
             />
