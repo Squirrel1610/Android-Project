@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android-Project/Bai-TH-29-3/LoginApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.239" />
+        <entry key="..\:/Android-Project/Bai-TH-29-3/LoginApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Android-Project/Bai-TH-29-3/LoginApp/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Android-Project/Bai-TH-29-3/LoginApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android-Project/Bai-TH-29-3/LoginApp/app/src/main/res/layout/activity_sub_one.xml" value="0.1" />
       </map>
