@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="TÍNH CHU VI VÀ DIỆN TÍCH HÌNH BÌNH HÀNH"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="Nhập cạnh bên: "
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/edtCanhBen"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:hint="Nhap canh ben" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="Nhập cạnh đáy: "
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/edtCanhDay"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:inputType="number"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:paddingLeft="5dp"
+            android:hint="Nhap canh day" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="Nhập chiều cao: "
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/edtChieuCao"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="8"
+            android:inputType="number"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:paddingLeft="5dp"
+            android:hint="Nhap chieu cao" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="8">
+
+        <Button
+            android:id="@+id/btnChuVi"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Tính chu vi"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/btnDienTich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_margin="10dp"
+            android:text="Tính diện tích"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Kết Quả"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tvKetQua"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white" />
+</LinearLayout>
