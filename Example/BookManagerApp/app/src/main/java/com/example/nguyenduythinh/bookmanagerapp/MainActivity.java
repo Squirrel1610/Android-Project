@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         ///data/data/com.example.nguyenduythinh.bookmanagerapp
         databaseBook = SQLiteDatabase.openOrCreateDatabase("/data/data/com.example.nguyenduythinh.bookmanagerapp/MyBook.db", null);
 
-        //TaoBangVaThemDuLieu();
+        TaoBangVaThemDuLieu();
         NapSACHvaoListview();
 
         Button nutThem= (Button) findViewById(R.id.btnThem);

@@ -3,8 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android-Project/Example/LyricsMusic/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Android-Project/Example/LyricsMusic/app/src/main/res/layout/activity_show_lyric.xml" value="0.25" />
+        <entry key="..\:/Android-Project/Example/NationListView/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Android-Project/Example/NationListView/app/src/main/res/layout/list_item_layout.xml" value="0.1" />
       </map>
     </option>
   </component>
